@@ -10,9 +10,9 @@ class Bcrypt implements PasswordInterface {
 	protected $cost = 8;
 
 	/**
-	 * or PASSWORD_BCRYPT
+	 * the algorithm to use ... PASSWORD_BCRYPT === PASSWORD_DEFAULT
 	 */
-	protected $algo = PASSWORD_DEFAULT;
+	protected $algo = PASSWORD_BCRYPT;
 
 	/**
 	 * create a 60 char hash (including salt)
